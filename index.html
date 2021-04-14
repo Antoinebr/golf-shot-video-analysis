@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href=" " rel='"stylesheet" type='"text/css"> -->
+    <style>
+        * {
+            font-family: sans-serif
+        }
+
+        main {
+            max-width: 38rem;
+            padding: 2rem;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+    
+
+        <video id="video" width="900" controls>
+            <source src="movie.mp4" type="video/mp4">
+            
+            Your browser does not support the video tag.
+        </video>
+
+        <script>
+            const queryString = window.location.search;
+            const video = new URLSearchParams(queryString).get('video');
+     
+            // todo xss
+            document.querySelector('video source').setAttribute('src', `/${video}`);
+        </script>
+
+    </main>
+</body>
+
+</html>

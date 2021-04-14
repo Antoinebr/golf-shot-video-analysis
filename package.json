@@ -1,0 +1,16 @@
+{
+  "name": "yi-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-record-lpcm16": "^1.0.1",
+    "yi-action-camera": "^0.1.4"
+  }
+}
